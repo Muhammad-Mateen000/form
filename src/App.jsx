@@ -17,11 +17,11 @@ function App() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className='border px-8 py-10 rounded-md text-left w-[330px] bg-gray-400'>
+    <form onSubmit={handleSubmit(onSubmit)} className='border px-8 py-10 rounded-md text-left md:w-[330px] w-[300px] bg-gray-400'>
       {/* firstname ....................................*/}
       <div>
         <label className='text-black font-semibold'>First Name : </label><br />
-        <input placeholder='Enter First Name' className=' text-xs bg-white text-black font-semibold border-none my-2 p-2 w-[250px]' {...register("firstName", {
+        <input placeholder='Enter First Name' className=' text-xs bg-white text-black font-semibold border-none my-2 p-2 md:w-[250px] w-[220px]' {...register("firstName", {
           required: "First Name is required",
           minLength: { value: 3, message: 'Min Length At Least 3' },
           maxLength: { value: 20, message: 'Max length almost 20 characters' }
@@ -35,7 +35,7 @@ function App() {
         <label className='text-black font-semibold'>Email : </label><br />
         <input
         placeholder='Enter Your Email'
-          className='text-xs bg-white text-black font-semibold border-none my-1 p-2 w-[250px]'
+          className='text-xs bg-white text-black font-semibold border-none my-1 p-2 md:w-[250px] w-[220px]'
           type="email"
           {...register("email", {
             required: "Email is required",
@@ -54,7 +54,7 @@ function App() {
         <label className='text-black font-semibold'>Password : </label><br />
         <input
         placeholder='Enter Your Password'
-          className=' text-xs bg-white text-black font-semibold border-none my-1 p-2 w-[250px]'
+          className=' text-xs bg-white text-black font-semibold border-none my-1 p-2 md:w-[250px] w-[220px]'
           type="password"
           {...register("password", {
             required: "Password is required",
