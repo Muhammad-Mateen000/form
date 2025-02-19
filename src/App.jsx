@@ -17,7 +17,7 @@ function App() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className='border px-8 py-10 rounded-md text-left md:w-[330px] w-[300px] bg-gray-400'>
+    <form onSubmit={handleSubmit(onSubmit)} className='border md:px-8 px-6 md:py-10 py-8 rounded-md text-left md:w-[330px] w-[300px] bg-gray-400'>
       {/* firstname ....................................*/}
       <div>
         <label className='text-black font-semibold'>First Name : </label><br />
